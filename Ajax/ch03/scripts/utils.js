@@ -11,6 +11,6 @@ function createRequest() {
         request = null;
       }
     }
-  }	
+  }
   return request;
 }
