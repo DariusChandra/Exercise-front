@@ -24,11 +24,15 @@ function initPage() {
         document.getElementById("navigation").getElementsByTagName("a");
     for (var k = 0; k < buttons.length; k++) {
         var currentBtn = buttons[k];
-        currentBtn.mouseover = showHint;
-        currentBtn.mouseout = hideHint;
+        // currentBtn.mouseover = showHint;
+        // currentBtn.mouseout = hideHint;
         currentBtn.onclick = showTab;
-        currentBtn.onmouseover = buttonOver;
-        currentBtn.onmouseout = buttonOut;
+        // currentBtn.onmouseover = buttonOver;
+        // currentBtn.onmouseout = buttonOut;
+        currentBtn.addEventListener("mouseover", showHint, false);
+        currentBtn.addEventListener("mouseover", buttonOver, false);
+        currentBtn.addEventListener("mouseout", hideHint, false);
+        currentBtn.addEventListener("mouseout", buttonOut, false);
     }
 }
 
