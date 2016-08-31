@@ -29,22 +29,26 @@ function initPage() {
         currentBtn.onclick = showTab;
         // currentBtn.onmouseover = buttonOver;
         // currentBtn.onmouseout = buttonOut;
-        currentBtn.addEventListener("mouseover", showHint, false);
-        currentBtn.addEventListener("mouseover", buttonOver, false);
-        currentBtn.addEventListener("mouseout", hideHint, false);
-        currentBtn.addEventListener("mouseout", buttonOut, false);
+        // currentBtn.addEventListener("mouseover", showHint, false);
+        // currentBtn.addEventListener("mouseover", buttonOver, false);
+        // currentBtn.addEventListener("mouseout", hideHint, false);
+        // currentBtn.addEventListener("mouseout", buttonOut, false);
+        addEventHandler(currentBtn, "mouseover", showHint);
+        addEventHandler(currentBtn, "mouseout", hideHint);
+        addEventHandler(currentBtn, "mouseover", buttonOver);
+        addEventHandler(currentBtn, "mouseout", buttonOut);
     }
 }
 
 var welcomePaneShowing = true;
 
-function showHint() {
+function showHint(e) {
     // alert("in showHint()");
     if (!welcomePaneShowing) {
         return;
     }
-
-    switch (this.title) {
+    var me = getActivatedObject(e);
+    switch (me.title) {
         case "beginners":
             var hintText = "Just getting started? Come join us!";
             break;
@@ -61,7 +65,7 @@ function showHint() {
     contentPane.innerHTML = "<h3>" + hintText + "</h3>";
 }
 
-function hideHint() {
+function hideHint(e) {
     // alert("in hideHint()");
     if (welcomePaneShowing) {
         var contentPane = document.getElementById("content");
@@ -70,9 +74,11 @@ function hideHint() {
     }
 }
 
-function showTab() {
+function showTab(e) {
     // alert("in showTab()");
-    var selectedTab = this.title;
+    // var selectedTab = this.title;
+    var me = getActivatedObject(e);
+    var selectedTab = me.title;
 
     if (selectedTab == "welcome") {
         welcomePaneShowing == true;
@@ -110,10 +116,14 @@ function showSchedule() {
     }
 }
 
-function buttonOver() {
-    this.className = "active";
+function buttonOver(e) {
+    // this.className = "active";
+    var me = getObject(e);
+    me.classNameActivated = "active";
 }
 
 function buttonOut() {
-    this.className = "";
+    // this.className = "";
+    var me = getActivatedObject(e);
+    me.className = "";
 }
