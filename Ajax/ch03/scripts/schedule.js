@@ -1,14 +1,16 @@
 window.onload = initPage;
 
 function initPage() {
-    var tabs = document.getElementById("tabs").getElementsByTagName("a");
+    var tabs =
+        document.getElementById("tabs").getElementsByTagName("a");
     for (var i = 0; i < tabs.length; i++) {
         var currentTab = tabs[i];
         currentTab.onmouseover = showHint;
         currentTab.onmouseout = hideHint;
         currentTab.onclick = showTab;
     }
-    var images = document.getElementById("schedulePane").getElementsByTagName("img");
+    var images =
+        document.getElementById("schedulePane").getElementsByTagName("img");
     for (var j = 0; j < images.length; j++) {
         var currentImage = images[j];
         currentImage.onmouseover = showHint;
@@ -18,7 +20,8 @@ function initPage() {
         // }
     }
 
-    var buttons = document.getElementById("navigation").getElementsByTagName("a");
+    var buttons =
+        document.getElementById("navigation").getElementsByTagName("a");
     for (var i = 0; i < buttons.length; i++) {
         var currentBtn = buttons[i];
         currentBtn.mouseover = showHint;
@@ -58,7 +61,8 @@ function hideHint() {
     // alert("in hideHint()");
     if (welcomePaneShowing) {
         var contentPane = document.getElementById("content");
-        contentPane.innerHTML = "<h3>Click a tab to display the course schedule for the class</h3>";
+        contentPane.innerHTML =
+            "<h3>Click a tab to display the course schedule for the class</h3>";
     }
 }
 
@@ -68,11 +72,13 @@ function showTab() {
 
     if (selectedTab == "welcome") {
         welcomePaneShowing == true;
-        document.getElementById("content").innerHTML = "<h3>Click a tab to display the course schedule for the class</h3>";
+        document.getElementById("content").innerHTML =
+            "<h3>Click a tab to display the course schedule for the class</h3>";
     } else {
         welcomePaneShowing = false;
     }
-    var tabs = document.getElementById("tabs").getElementsByTagName("a");
+    var tabs =
+        document.getElementById("tabs").getElementsByTagName("a");
     for (var i = 0; i < tabs.length; i++) {
         var currentTab = tabs[i];
         if (currentTab.title == selectedTab) {
