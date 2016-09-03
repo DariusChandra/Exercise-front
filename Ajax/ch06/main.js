@@ -103,7 +103,8 @@ function puzzleIsComplete() {
         if (num != "ty")
             tileOrder += num;
     }
-    if (tileOrder == "010203040506070809101112131415")
+    if (tileOrder == "010203040506070809101112131415") {
         return true;
+    }
     return false;
 }
