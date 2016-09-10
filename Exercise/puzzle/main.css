@@ -1,0 +1,39 @@
+body {
+    background: #bda;
+    margin: 0;
+    text-align: center;
+}
+
+#puzzle {
+    margin: 114px auto 0 auto;
+    /*width: 1000px;*/
+}
+
+#puzzleGrid {
+    float: left;
+    position: relative;
+    top: 115px;
+    left: 460px;
+}
+#other {
+    float: right;
+    position: relative;
+    top: 115px;
+    right: 460px;
+}
+
+#puzzleGrid td {
+    height: 69px;
+    width: 69px;
+}
+
+#puzzleGrid td img {
+    padding: 0;
+    margin: 0;
+/*    border-top: solid 1px #aaaaaa;
+    border-left: solid 1px #aaaaaa;
+    border-right: solid 1px #aaacaa;
+    border-bottom: solid 1px #aaacaa;*/
+}
+
+
