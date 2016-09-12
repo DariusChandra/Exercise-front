@@ -445,12 +445,17 @@ footer a:hover {
 .web img {
     margin: 0 12px;
 }
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Products.html+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Products.html+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Products.html+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .products .leftArea {
     width: 185px;
 }
 .products .rightArea {
     width: 810px;
+    margin-bottom: 7px;
+}
+.products .bannerBar {
+    float: none;
+ /*+++++++++++++++++leftArea+++++++++++++++++++++*/
 }
 .leftNav {
     background-color: #f3f3f3;
@@ -458,4 +463,169 @@ footer a:hover {
 }
 .navTitle {
     color: #555;
+    font-size: 14px;
+    line-height: 34px;
+    height: 34px;
+    text-align: center;
+    border-bottom: #d7d7d7 solid 1px;
+}
+.navCont {
+    padding: 0 19px 4px; /*up left-right down*/
+    /*display: block;*/
+    overflow: hidden;
+    border-bottom: #d7d7d7 dotted 1px;
+    margin-bottom: -1px;
+}
+.navCont h3 {
+    font-size: 12px;
+    color: #555;
+    height: 30px;
+    line-height: 30px;
+}
+.navContList{
+    line-height: 25px;
+}
+.navContList li {
+    float: left;
+    width: 50%;
+}
+
+.navContList a:hover {
+    color: #ff8102;
+}
+ /*+++++++++++++++++rightArea+++++++++++++++++++++*/
+/*productsTitle*/
+.productsList .space01 {
+    height: 25px;
+}
+.productsTitle {
+    height: 34px;
+    border-bottom: #cccccc solid 2px;
+}
+.productsTitle h3 {
+    height: 34px;
+    line-height: 34px;
+    width: 179px;
+    border-bottom: #096dba solid 2px;
+    padding-left: 10px;
+}
+.productsList .item {
+    width: 25%;
+/*    padding-left: 16px;*/
+    float: left;
+    margin-bottom: 10px;
+}
+.item .imgItem {
+    height: 170px;
+    text-align: center;
+}
+.item .textItem {
+    padding-left: 16px;
+}
+.item p {
+    line-height: 20px;
+    width: 170px;
+    font-size: 12px;
+}
+.item a {
+    color: #000;
+}
+.item a:hover {
+    text-decoration: underline;
+}
+.item .money {
+    color: #d4105a;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.item span.star {
+    width: 13px;
+    height: 12px;
+    overflow: hidden;
+    background: url("../images/icon/star.png") left top no-repeat;
+    display: inline-block;
+}
+.item .comment a {
+    color: #085c9b;
+}
+.item .comment a:hover {
+    color: #ff8b00;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++category.html+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++category.html+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.hr115 {
+    height: 15px;
+}
+.vertical li {
+    float: none;
+    width: auto;
+    padding-left: 8px;
+}
+.screenBox {
+    border-bottom: #ccc solid 1px;
+}
+.screening {
+    border-bottom: #ccc dotted 1px;
+    margin-bottom: -1px;
+}
+.screening dt {
+    line-height: 32px;
+    width: 84px;
+    text-align: right;
+    float: left;
+    margin-right: 32px;
+    color: #999;
+}
+.limit {
+    width: 55px;
+    float: left;
+    line-height: 32px;
+}
+.screening .active {
+    background-color: #1d7ad9;
+    color: #fff;
+}
+.screening a {
+    padding: 2px;
+    color: #1d7ad9;
+}
+.screeningList {
+    line-height: 32px;
+    width: 500px;
+    float: left;
+}
+.screeningList li {
+    float: left;
+    width: 25%;
+}
+.screening .gengduo {
+    line-height: 32px;
+    width: 138px;
+    text-align: left;
+    float: left;
+    color: #000;
+}
+.gengduo a {
+    background: url("../images/icon/jiantou.png") left center no-repeat;
+    overflow: hidden;
+    width: 7px;
+    height: 5px;
+    display: inline-block;
+    margin-left: 4px;
+}
+.haiyou {
+    border: #dcdcdc solid 1px;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 4px;
+    float: left;
+    padding-left: 11px;
+    margin-right: 10px;
+}
+.haiyou a {
+    background: url("../images/icon/jiantou.png") left center no-repeat;
+    overflow: hidden;
+    width: 7px;
+    height: 5px;
+    display: inline-block;
+    margin-left: 4px;
 }
