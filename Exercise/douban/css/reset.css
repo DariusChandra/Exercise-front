@@ -1,0 +1,21 @@
+/*清零*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+img,input,fieldset {
+    border: none;
+    border: 1px solid none;
+}
+form {
+    border: 0;
+}
+p {
+    display: block;
+}
+body, td, th {
+    font: 12px Helvetica,Arial,sans-serif;
+}

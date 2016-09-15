@@ -1,0 +1,339 @@
+/*公共样式*/
+a {
+    color: #37a;
+}
+a:hover {
+    color: #fff;
+    background-color: #37a;
+}
+a:visited {
+    color: #669;
+    background-color: none;
+}
+li {
+    list-style: none;
+}
+input:focus {
+    outline: none;
+}
+label {
+    font-family: Tahoma;
+    vertical-align: middle;
+}
+.hide {
+    display: none;
+}
+/*++++++++++++++++++++++++++header+++++++++++++++++++++++++++++++++++++++*/
+body {
+    padding-top: 30px;
+}
+.wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
+#hdHeader {
+    width: 950px;
+    height: 34px;
+    margin: 0px auto 25px;
+    position: relative;
+}
+#hdHeader .hdLogo {
+    width: 154px;
+    height: 30px;
+    display: block;
+    background: url(../img/hdlogo.png) no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#hdHeader .hdSearch {
+    position: absolute;
+    top: 0px;
+    left: 183px;
+    border: 1px solid #c3c3c3;
+    width: 270px;
+    height: 30px;
+}
+#hdHeader .hdSearch .inp {
+    display: block;
+    height: 30px;
+    overflow: hidden;
+}
+#hdHeader .hdSearch .inp input {
+    width: 240px;
+    border: none;
+    font-size: 13px;
+    height: 20px;
+    padding: 5px;
+}
+#hdHeader .hdSearch .bn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../img/icon/bn_srh_1.png) 50% 50% no-repeat;
+}
+#hdHeader .bn input {
+    font-size: 0px;
+}
+#hdHeader .hdNav {
+    float: right;
+    margin-top: 6px;
+    width: 479px;
+    height: 20px;
+}
+#hdHeader .hdNav li {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 0 0 17px;
+}
+#hdHeader .hdNav li a {
+    display: block;
+    zoom: 1;
+    width: 40px;
+    height: 20px;
+    vertical-align: middle;
+    /*margin-left: -5px;*/
+    background: url(../img/header_nav_logo.png) no-repeat;
+}
+#hdHeader .hdNav li a.hdNavBook {
+    background-position: 0 0;
+}
+#hdHeader .hdNav li a.hdNavMovie {
+    background-position: -60px 0;
+}
+#hdHeader .hdNav li a.hdNavMusic {
+    background-position: -120px 0;
+}
+#hdHeader .hdNav li a.hdNavGroup {
+    background-position: -180px 0;
+}
+#hdHeader .hdNav li a.hdNavCity {
+    background-position: -300px 0;
+}
+#hdHeader .hdNav li a.hdNavFM {
+    background-position: -240px 0;
+}
+#hdHeader .hdNav li a.hdNavThings {
+    background-position: -360px 0;
+}
+#hdHeader .hdNav li a.hdNavMarket {
+    background-position: -421px 0;
+    width: 42px;
+}
+#hdReg {
+    background-color: #f1faf1;
+    width: 100%;
+    height: 178px;
+    background: url(../img/douban_bg.png) top right no-repeat;
+    margin-bottom: 25px;
+}
+#hdReg .wrapper {
+    position: relative;
+    overflow: visible;
+    padding: 28px 0 4px;
+    zoom: 1;
+}
+#hdReg .wrapper .login, #hdReg .wrapper .app {
+    z-index: 2;
+}
+#hdReg .wrapper .login {
+    float: right;
+    width: 270px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 0;
+}
+#hdReg .wrapper .login .item {
+    position: relative;
+    margin-bottom: 4px;
+}
+#hdReg .wrapper .login .itemAccount, #hdReg .wrapper .login .itemPassword {
+    width: 252px;
+    height: 30px;
+    border: 1px solid #dbe5db;
+    border-radius: 2px;
+    line-height: 30px;
+    background: #fff;
+    padding: 0 8px;
+    font-size: 13px;
+}
+#hdReg .wrapper .login input {
+    color: #666;
+}
+#hdReg .wrapper .login .itemPassword input {
+    width: 220px;
+}
+#hdReg .wrapper .login .itemPassword .opt {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 12px;
+    line-height: 35px;
+}
+#hdReg .wrapper .login .itemPassword .opt a {
+    color: #ccc;
+}
+#hdReg .wrapper .login .itemPassword .opt a:hover {
+    color: #999;
+    background-color: #fff;
+}
+#hdReg .wrapper .login .itemSubmit {
+    margin-top: 6px;
+}
+#hdReg .wrapper .login .itemSubmit input {
+    padding: 0 22px;
+    margin-right: 0;
+    height: 30px;
+    font-size: 12px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #30a080;
+    color: #fff;
+    width: 133px;
+}
+#hdReg .wrapper .login .itemSubmit input:hover {
+    background: #2A8C70;
+}
+#hdReg .wrapper .login .itemSubmit a {
+    background: transparent;
+    display: inline-block;
+    padding: 8px 21px 7px;
+    border-radius: 2px;
+    border: 1px solid #30a080;
+    font-size: 12px;
+    width: 89px;
+    margin-left: 4px;
+    text-align: center;
+    color: #30a080;
+}
+#hdReg .wrapper .login .itemAction {
+    font-size: 12px;
+    margin-top: 8px;
+    overflow: hidden;
+    /*height: 13px;*/
+    color: #666;
+    /*vertical-align: text-top;*/
+}
+#hdReg .wrapper .login .itemAction #remember {
+    vertical-align: -3px;
+}
+#hdReg .wrapper .login .itemActionThird {
+    float: right;
+    font-size: 0;
+    margin-top: 3px;
+    margin-right: 4px;
+}
+#hdReg .wrapper .login .itemActionThird li {
+    display: inline-block;
+}
+#hdReg .wrapper .login .itemActionThird a {
+    width: 14px;
+    height: 13px;
+    display: inline-block;
+}
+#hdReg .wrapper .login .itemActionThird li+li {
+    margin-left: 8px;
+}
+#hdReg .wrapper .login .itemActionThird a.weibo {
+    background: url(../img/icon/weibo.png) bottom no-repeat;
+}
+#hdReg .wrapper .login .itemActionThird a.weixin {
+    background: url(../img/icon/wechat.png) bottom no-repeat;
+}
+#hdReg .wrapper .app {
+    position: absolute;
+    height: 120px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0 auto 430px;
+}
+#hdReg .wrapper:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+}
+#hdReg .wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: url(../img/doubanapp4.png) top left no-repeat;
+}
+#hdReg .wrapper .app .appTitle {
+    margin: 7px 0;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 24px;
+}
+#hdReg .wrapper .app .appTitle span {
+    margin-left: 11px;
+    font-weight: 100;
+    color: #111;
+}
+#hdReg .wrapper .app .appSlogan {
+    margin: 0 0 18px;
+    font-size: 0;
+    color: #111;
+    text-align: justify;
+}
+#hdReg .wrapper .app .appSlogan:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+#hdReg .wrapper .app .appSlogan span {
+    font-size: 12px;
+}
+#hdReg .wrapper .app a.linkApp {
+    display: inline-block;
+    border: 1px solid #00b51d;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    background: #00b51d;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    margin-right: 2px;
+}
+#hdReg .wrapper .app .appQR {
+    zoom:1;
+    position: relative;
+    float: right;
+}
+#hdReg .wrapper .app .appQR a {
+    display: block;
+    zoom: 1;
+    height: 30px;
+    border: 1px solid #48aa0d;
+    border-radius: 2px;
+}
+#hdReg .wrapper .app .appQR a:hover {
+    background-color: #fff;
+}
+#hdReg .wrapper .app .appQR .QRExpand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 5px;
+    border: 1px solid #4a480d;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    background: #fff;
+    line-height: 13px;
+    display: none;
+}
+#hdReg .wrapper .app .appQR .QRExpand p {
+    margin: 13px 0;
+}
+
