@@ -50,6 +50,9 @@ span.p1 {
     width: 100px;
     margin-right: 20px;
 }
+.sideNav .sideLinks .sideNavBt {
+    background: url(../img/icon/new_menu.gif) center 13% no-repeat;
+}
 .sideTitle a:link, .sideTitle a:visited {
     font-size: 24px;
 }
@@ -111,3 +114,18 @@ span.p1 {
 .bn-link:hover {
     background: #878882;
 }
+.cate {
+    margin-bottom: 10px;
+}
+.cate .cateLabel {
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: #333;
+}
+.cate li {
+    display: inline-block;
+    zoom:1;
+    margin-left: 10px;
+}
+
