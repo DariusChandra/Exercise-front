@@ -18,4 +18,45 @@ p {
 }
 body, td, th {
     font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}
+div {
+    display: block;
+}
+/*公共样式*/
+a {
+    color: #37a;
+}
+
+a:visited {
+    color: #669;
+    background-color: none;
+}
+a:hover {
+    color: #fff;
+    background-color: #37a;
+}
+li {
+    list-style: none;
+}
+input:focus {
+    outline: none;
+}
+label {
+    font-family: Tahoma;
+    vertical-align: middle;
+}
+img {
+    display: block;
+    vertical-align: middle;
+}
+h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+i {
+    font-style: normal;
+    font-weight: normal;
 }
