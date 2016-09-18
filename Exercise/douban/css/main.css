@@ -339,20 +339,20 @@
 #contSns .side .onlineActive .desc {
     line-height: 19px;
 }
-#contSns .main .mod {
+#contSns .mainOne .mod {
     width: auto;
 }
-#contSns .main .albums {
+#contSns .mainOne .albums {
     float: left;
     width: 350px;
     font-size: 0;
     margin-right: 30px;
     color: #999;
 }
-#contSns .main .albums ul {
+#contSns .mainOne .albums ul {
     margin: -10px 0 0 -10px;
 }
-#contSns .main .albums ul li {
+#contSns .mainOne .albums ul li {
     display: inline-block;
     zoom: 1;
     letter-spacing: normal;
@@ -362,7 +362,7 @@
     font-size: 12px;
     margin: 10px 0 0 10px;
 }
-#contSns .main .albums .pic {
+#contSns .mainOne .albums .pic {
     display: inline-block;
     zoom: 1;
     width: 170px;
@@ -371,10 +371,10 @@
     vertical-align: middle;
     white-space: nowrap;
 }
-#contSns .main .notes .author {
+#contSns .mainOne .notes .author {
     color: #999;
 }
-#contSns .main .notes li {
+#contSns .mainOne .notes li {
     margin-top: 12px;
 }
 /*++++++++++++   contMovie begin +++++++++++*/
@@ -390,9 +390,6 @@
     color: #fff;
     background-color: #37a;
 }
-
-
-
 #contMovie .movieCharts ol {
     margin: 0;
     padding: 0;
@@ -552,7 +549,19 @@
     padding-left: 120px;
 }
 /*++++++++++++   contMusic begin +++++++++++*/
-#contMusic .sideNav .appList .appIcon {
+#contMusic a:link, #contMusic a:visited {
+    color: #555d53;
+}
+#contMusic a:hover {
+    color: #fff;
+}
+#contMusic .sideNav .sideTitle a:link, #contMusic .sideNav .sideTitle a:visited {
+    color: #f38c4f;
+}
+#contMusic .sideNav .sideTitle a:hover {
+    color: #fff;
+}
+#contMusic .sideNav .appList span {
     background: url(../img/icon/app_icons_50_10.jpg) no-repeat;
     border-radius: 5px;
     box-shadow: 2px 2px #ccc;
@@ -560,15 +569,139 @@
     width: 48px;
     height: 48px;
 }
-#contMusic .sideNav .appList .appIcon#05 {
+#contMusic .sideNav .appList span.appIcon05 {
     background-position: -250px 0;
 }
-#contMusic .sideNav .appList #10 {
+#contMusic .sideNav .appList span.appIcon10 {
     background-position: -50px 0;
 }
-
-
-
+#contMusic .artistCharts .num, #contMusic .artistCharts .pic {
+    float: left;
+    max-height: 61px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+#contMusic .artistCharts .desc {
+    margin-top: 4px;
+    color: #999;
+}
+#contMusic .albumList {
+    margin-bottom: 20px;
+}
+#contMusic .albumList .pic {
+    height: 80px;
+    overflow: hidden;
+}
+#contMusic .albumList .title {
+    font-size: 12px;
+    color: #666;
+}
+#contMusic .albumList .rating span {
+    display: inline-block;
+    zoom: 1;
+    background: url(../img/icon/ic_rating_s.png) no-repeat;
+    width: 55px;
+    height: 11px;
+    margin-right: 3px;
+    overflow: hidden;
+}
+#contMusic .albumList .rating span.allstar30 {
+    background-position: 0 -11px;
+}
+#contMusic .albumList .rating span.allstar25 {
+    background-position: 0 -22px;
+}
+#contMusic .albumList .rating span.allstar20 {
+    background-position: 0 -33px;
+}
+#contMusic .albumList ul li {
+    width: 132.67px;
+}
+#contMusic .albumList .pic {
+    overflow: hidden;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+#contMusic .albumList .cover {
+    position: relative;
+}
+#contMusic .albumList .cover i {
+    position: absolute;
+    background: url(../img/music/timeline-player-cover.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    left: 26px;
+    opacity: 0.8;
+}
+/*++++++++++++   contYipai begin +++++++++++*/
+#contYipai a:link , #contYipai a:visited {
+    color: #837960;
+}
+#contYipai a:hover {
+    color: #fff;
+}
+#contYipai .sideNav .sideTitle a {
+    color: #f66;
+}
+#contYipai .sideNav .sideTitle a:hover {
+    color:#fff;
+}
+#contYipai .side .cate .yipaiStyle {
+    color: #999;
+    font-size: 14px;
+}
+#contYipai .side .yipaiFirst {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+#contYipai .side .cate li {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    width: 4em;
+    margin-top: 5px;
+}
+#contYipai .main .mod {
+    padding-left: 120px;
+}
+/*#contYipai .yipaiList ul {
+    margin-left: -20px;
+}*/
+#contYipai .yipaiList ul li {
+    margin-bottom: 2%;
+    margin-right: 5px;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    width: 262px;
+    height: 237px;
+}
+#contYipai .yipaiList .yipaiListItem {
+    display: block;
+}
+#contYipai .yipaiList .yipaiListItemPic {
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 80%;
+    overflow: hidden;
+}
+#contYipai .yipaiList li a:hover {
+    background-color: #fff;
+    color: #9D9379;
+}
+#contYipai .yipaiList .yipaiListItemPic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#contYipai .yipaiList .yipaiListItemText {
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+}
 /*++++++++++++   contCity begin +++++++++++*/
 #contCity a:link, #contCity a:visited {
     color: #643;
@@ -579,9 +712,49 @@
 #contCity .sideNav .sideTitle a {
     color: #ec5803;
 }
+#contCity .sideNav .sideTitle a:hover {
+    color: #fff;
+}
 #contCity .cate .cateLabel a:link, #contCity .cate .cateLabel a:visited {
     color: #333;
 }
 #contCity .cate .cateLabel a:hover {
     color: #fff;
+}
+#contCity .main {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    width: 535px;
+}
+#contCity .cityList ul {
+    margin-left: -20px;
+}
+#contCity .cityList li {
+    width: 252px;
+    margin-left: 20px;
+    text-align: left;
+    overflow: hidden;
+    zoom: 1;
+}
+#contCity .cityList li .pic {
+    float: left;
+    margin-right: 10px;
+}
+#contCity .cityList li .info {
+    display: inline-block;
+    width: 168px;
+    color: #666;
+}
+#contCity .cityList li .info .title a span {
+    background-color: #ff8263;
+    display: inline-block;
+    vertical-align: baseline;
+    color: #fff;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 17px;
+    padding: 0 3px;
+    border-radius: 3px;
+    margin-bottom: 3px;
 }

@@ -5,7 +5,13 @@ body {
     width: 950px;
     margin: 0 auto;
 }
-
+div {
+    display: block;
+}
+address {
+    font-style: normal;
+    font-weight: normal;
+}
 .hide {
     display: none;
 }
@@ -60,6 +66,10 @@ span.p1 {
     position: relative;
     margin-top: 5px;
     font-size: 14px;
+}
+.list1 li {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .list {
     font-size: 0;
@@ -125,7 +135,7 @@ span.p1 {
 }
 .cate li {
     display: inline-block;
-    zoom:1;
-    margin-left: 10px;
+    zoom:1;/*
+    margin-left: 10px;*/
 }
 
