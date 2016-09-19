@@ -1,0 +1,105 @@
+
+/*
+  @名称: 公用
+  @区域: 为文档中的公共ClassName增加属性，避免重复命名;
+*/
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+.wrapper {
+    width: 1210px;
+    margin: 0 auto;
+}
+a:hover {
+    color: #c81623;
+    text-decoration: none;
+}
+.redStyle {
+    color: #c81623;
+}
+/*
+  @名称:
+  @区域:
+*/
+/*             header             */
+.banner {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #c00;
+}
+.banner .dd-spacer {
+    position: absolute;
+    top: -5px;
+    background-color: #fff;
+    overflow: hidden;
+    height: 10px;
+}
+.banner .fl  ul .fort1 {
+    width: 60px;
+    position: relative;
+    padding: 0 23px 0 10px;
+}
+.banner .dropdown .fort1 i.icon-right {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    width: 10px;
+    height: 5px;
+    background: url(../img/icon/jdimg.png) -18px -4px no-repeat;
+}
+.banner .list-active {
+    margin-left: -1px;
+}
+.banner .list-active .fort1 {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    margin-top: -1px;
+}
+.banner .list-active .fort1 i.icon-right {
+    background: url(../img/icon/jdimg.png) -18px 0 no-repeat;
+}
+.banner .list-active .address {
+    position: relative;
+}
+.banner #topbar-city .dd-spacer {
+    width: 93px;
+    left: 0px;
+}
+
+.banner .dropdown .address {
+    width: 293px;
+    height: 244px;
+    padding-left: 18px;
+    border: 1px solid #ddd;
+}
+.banner .dropdown .address dd {
+    float: left;
+    display: inline-block;
+    width: 20%;
+}
+.banner .dropdown .address dd span.choose {
+    background-color: #c81623;
+    color: #fff;
+    margin-left: -6px;
+    padding: 6px 9px 6px 8px;
+}
+/*.banner .fr li {
+    float: left;
+    padding: 0 2px;
+}*/
+
+/*.banner li.spacer {
+    height: 12px;
+    width: 1px;
+    margin-top: 9px;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+}*/
+/*.banner .bnRight li dt {
+    padding: 0 8px;
+}
+
+*/
