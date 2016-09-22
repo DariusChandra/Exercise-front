@@ -9,37 +9,54 @@
     width: 1210px;
     margin: 0 auto;
 }
-a:hover {
+/*a:hover {*/
     color: #c81623;
     text-decoration: none;
 }
 .redStyle {
     color: #c81623;
 }
+.bad {
+    position: relative;
+}
 /*
   @名称:
   @区域:
 */
-/*             header             */
+/* ******************************header*********************************/
+
+/* *********************banner********************/
 .banner {
     height: 30px;
     line-height: 30px;
     background-color: #f1f1f1;
-    border-bottom: 1px solid #c00;
+    /*border-bottom: 1px solid #c00;*/
 }
-.banner .dd-spacer {
+.dd-spacer {
     position: absolute;
     top: -5px;
     background-color: #fff;
     overflow: hidden;
     height: 10px;
 }
-.banner .fl  ul .fort1 {
-    width: 60px;
+.banner li.spacer {
+    height: 12px;
+    width: 1px;
+    margin-top: 9px;
+    margin-right: 1px;
+    margin-left: 1px;
+    padding: 0 ;
+    background: #ddd;
+    overflow: hidden;
+}
+.banner .dt {
     position: relative;
+}
+.banner .fl  ul .dt {
+    width: 60px;
     padding: 0 23px 0 10px;
 }
-.banner .dropdown .fort1 i.icon-right {
+.banner .dropdown i.icon-right {
     display: inline-block;
     position: absolute;
     top: 12px;
@@ -48,6 +65,7 @@ a:hover {
     height: 5px;
     background: url(../img/icon/jdimg.png) -18px -4px no-repeat;
 }
+/*list-active 鼠标悬停时用js加入到dropdown 后面*/
 .banner .list-active {
     margin-left: -1px;
 }
@@ -67,7 +85,6 @@ a:hover {
     width: 93px;
     left: 0px;
 }
-
 .banner .dropdown .address {
     width: 293px;
     height: 244px;
@@ -85,21 +102,452 @@ a:hover {
     margin-left: -6px;
     padding: 6px 9px 6px 8px;
 }
-/*.banner .fr li {
+.banner .banner-list li {
+    position: relative;
     float: left;
-    padding: 0 2px;
-}*/
-
-/*.banner li.spacer {
-    height: 12px;
-    width: 1px;
-    margin-top: 9px;
-    padding: 0;
+}
+.banner .banner-list li .small-space {
+    padding: 0 10px;
+}
+#topbar-myjd .dt {
+    padding-left: 10px;
+    width: 74px;
+}
+.banner .dropdown .dt {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+.banner .dropdown .user-info {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 280px;
+    height: 191px;
+    margin-left: 1px;
+    padding: 0 0 0 15px;
+    border: 1px solid #ddd;
+}
+.banner .dropdown .user-info dd {
+    float: left;
+    display: inline-block;
+    width: 20%;
+}
+.banner .user-pic, .banner .user-text {
+    float: left;
+}
+.banner .user-login .user-pic img {
+    border-radius: 50%;
+}
+.banner .user-text {
+    display: inline-block;
+}
+.banner .user-login .user-text .user-text-login {
+    font-weight: bold;
+}
+.banner .user-login {
+    padding-top: 10px;
+}
+.banner .user-login .user-text {
+    padding-left: 10px;
+}
+.banner .user-orderform {
+    position: absolute;
+    top: 92px;
+    left: 16px;
+}
+.banner .user-orderform .dd {
+    width: 50%;
+    display: inline-block;
+    line-height: 24px;
+    float: left;
+}
+.banner .list-active .dt {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    margin-top: -1px;
+}
+.banner .list-active i.icon-right {
+    background: url(../img/icon/jdimg.png) -18px 0 no-repeat;
+}
+.banner #topbar-myjd .dd-spacer {
+    width: 83px;
+    left: 0px;
+}
+.banner .dropdown i.icon-left {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    width: 11px;
+    height: 16px;
+    background: url(../img/icon/jdimg.png) -2px -2px no-repeat;
+}
+.banner .list-active i.icon-left {
+    background: url(../img/icon/jdimg.png) -2px -27px no-repeat;
+}
+.banner .list-active .jd-qr {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #ddd;
+    margin-left: 1px;
+}
+#topbar-jdapp .dt {
+    padding-left: 25px;
+    width: 73px;
+}
+.banner #topbar-jdapp .dd-spacer {
+    width: 98px;
+    left: 0px;
+}
+#topbar-jdfocus .dt {
+    /*position: absolute;*/
+    padding-left: 10px;
+    width: 74px;
+}
+.banner .list-active .jdfocus-pic {
+    position: relative;
+}
+.banner .list-active .jdfocus-pic-qr {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding-right: 2px;
+    border: 1px solid #ddd;
+    margin-left: 1px;
+    z-index: -1;
+}
+.banner #topbar-jdfocus .dd-spacer {
+    width: 84px;
+    left: 2px;
+}
+#topbar-jdserv .dt {
+    padding-left: 10px;
+    width: 74px;
+}
+.banner .dropdown .jd-serv {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 160px;
+    height: 163px;
+    margin-left: 1px;
+    padding: 0 0 0 10px;
+    border: 1px solid #ddd;
+}
+.banner .dropdown .jd-serv .title {
+    font-weight: bold;
+}
+.banner .dropdown .jd-serv .dd {
+    display: inline-block;
+    float: left;
+    line-height: 24px;
+    width: 50%;
+}
+.banner .dropdown .jd-serv .jd-serv-buyer, .banner .dropdown .jd-serv .jd-serv-seller {
+    float: left;
+}
+.banner .dropdown .jd-serv .jd-serv-buyer {
+    border-bottom: 1px dotted #ddd;
+}
+.banner .dropdown .jd-serv .jd-serv-seller {
+    width: 150px;
+}
+.banner #topbar-jdserv .dd-spacer {
+    width: 84px;
+    left: 0px;
+}
+.banner #topbar-jdnav .dt {
+    padding-left: 10px;
+    width: 74px;
+}
+.banner .dropdown .jd-nav {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 1210px;
+    height: 186px;
+    margin-right: 1px;
+    /*padding: 0 0 0 10px;*/
+    border: 1px solid #ddd;
+}
+.banner .dropdown .jd-nav .db {
+    float: left;
+    /*width: 282px;*/
+    margin-top: 15px;
+    padding-left: 20px;
+    /*margin-left: 20px;*/
+}
+.banner .dropdown .jd-nav .jd-nav-topic {
+    width: 347px;
+}
+.banner .dropdown .jd-nav .jd-nav-topic .dd {
+    width: 25%;
+}
+.banner .dropdown .jd-nav .jd-nav-chanl {
+    width: 259px;
+}
+.banner .dropdown .jd-nav .jd-nav-chanl .dd {
+    width: 33.33%;
+}
+.banner .dropdown .jd-nav .jd-nav-serv {
+    width: 259px;
+}
+.banner .dropdown .jd-nav .jd-nav-serv .dd {
+    width: 33.33%;
+}
+.banner .dropdown .jd-nav .jd-nav-more {
+    width: 262px;
+}
+.banner .dropdown .jd-nav .jd-nav-more .dd {
+    width: 33.33%;
+}
+.banner .dropdown .jd-nav .dropmenu .ver-spacer {
+    float: left;
+}
+.banner .dropdown .jd-nav .db .title  {
+    font-weight: bold;
+    font-size: 14px;
+}
+.banner .dropdown .jd-nav .ver-spacer {
     background: #ddd;
+    width: 1px;
+    height: 150px;
+    margin-top: 20px;
+    padding: 0;
     overflow: hidden;
-}*/
-/*.banner .bnRight li dt {
-    padding: 0 8px;
+}
+.banner .dropdown .jd-nav .db .dd {
+    float: left;
+    line-height: 24px;
+}
+.banner #topbar-jdnav .dd-spacer {
+    width: 84px;
+    right: 0px;
+}
+/* *********************bannerAD********************/
+.bannerAd {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin: 0 auto 0;
+    background-color: #16408d;
+}
+.bannerAd .bannerAd-mod {
+    position: relative;
+}
+.bannerAd .bannerAd-close {
+    display: block;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.bannerAd .bannerAd-close {
+    background: url(../img/icon/ad-close.png) 0 0 no-repeat;
 }
 
-*/
+/*尚未使用到，未加入JS*/
+.bannerAd .bannerAd-close .hover {
+    background: url(../img/icon/ad-close.png) 0 -19px no-repeat;
+}
+.bannerAd .bannerAd-pic {
+    width: 1210px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* *********************logo********************/
+.logo {
+    height: 100px;
+}
+.logo .logo-bar {
+    float: left;
+    width: 362px;
+    height: 60px;
+    padding: 20px 0;
+}
+.logo .search-bar {
+    float: left;
+    position: relative;
+    width: 534px;
+    height: 32px;
+    margin-top: 25px;
+    border: 2px solid #b61d1d;
+}
+.logo .search-bar .inp {
+    display: block;
+    height: 32px;
+    overflow: hidden;
+}
+.logo .search-bar .inp input {
+    width: 454px;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    font-size: 14px;
+    padding-left: 4px;
+}
+.logo .search-bar .bn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    /*height: 32px;*/
+    overflow: hidden;
+    /*background-color: #b61d1d;*/
+}
+.logo .search-bar .bn input {
+    font-size: 16px;
+    width: 80px;
+    height: 32px;
+    color: #fff;
+    background-color: #b61d1d;
+    border:none;
+    font-family: "Microsoft YaHei";
+    line-height: 32px;
+}
+.logo .shop-bar {
+    position: relative;
+    margin-right: 65px;
+    padding-top: 25px;
+}
+.logo .shop-bar .dt{
+    float: right;
+    position: relative;
+    width: 96px;
+    height: 34px;
+    padding-left: 43px;
+    line-height: 34px;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 0 1px 1px #ebebeb;
+}
+.logo .dropdown i.icon-left {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 19px;
+    width: 16px;
+    height: 13px;
+    background: url(../img/icon/jdimg.png) -1px -59px no-repeat;
+}
+.logo .dropdown i.icon-right {
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    width: 5px;
+    height: 9px;
+    background: url(../img/icon/jdimg.png) -22px 0px no-repeat;
+}
+.logo .dropdown i.icon-count {
+    display: inline-block;
+    position: absolute;
+    top: -4px;
+    left: 104px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #c81623;
+    border-radius: 7px 7px 7px 0;
+    padding: 1px 2px;
+    min-width: 12px;
+    font-style: normal;
+    font-family: "microsoft yahei";
+    text-align: center;
+}
+.logo .list-active .dl {
+    display: block;
+    float: right;
+    box-shadow: 1px;
+    width: 308px;
+    height: 69px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    position: absolute;
+    top: 61px;
+    right: 0;
+    box-shadow: 0 0 1px 1px #ebebeb;
+}
+.logo .list-active .dt{
+    box-shadow: 0 0 1px 1px #ebebeb;
+}
+.logo .list-active .dd-spacer {
+    width: 139px;
+    right: 1px;
+    top: 58px;
+    z-index: 13;
+}
+.logo .list-active .shopcar-pic {
+    background: url(../img/icon/settleup-nogoods.png);
+    display: inlineblock;
+    width: 57px;
+    height: 49px;
+    float: left;
+    margin-left: 48px;
+    margin-top: 12px;
+}
+.logo .list-active .shopcar-text {
+    line-height: 12px;
+    color: #999;
+    margin-top: 28px;
+
+}
+.logo .list-bar {
+    float: left;
+    height: 20px;
+    width: 539px;
+    margin-top: 4px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.logo .list-bar li {
+    float: left;
+    margin-right: 10px;
+}
+
+/* ******************************header ok  *************************/
+
+
+/* ****************************   content   *************************/
+
+/* ********************* nav ********************/
+.menu {
+    width: 100%;
+    height: 44px;
+    border-bottom: 2px solid #b1191a;
+}
+.menu .all-sort {
+    text-align: left;
+    float: left;
+    position: relative;
+    width: 210px;
+    height: 44px;
+    background-color: #b1191a;
+}
+.menu .all-sort h2 a {
+    color: #fff;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 44px;
+    padding-left: 10px;
+}
+.menu .nav {
+    position: relatvie;
+    float: left;
+    padding-left: 20px;
+}
+.menu .nav li {
+    float: left;
+    margin-right: 40px;
+    line-height: 44px;
+}
+.menu .nav li a {
+    font-size: 16px;
+    font-family: "微软雅黑";
+}

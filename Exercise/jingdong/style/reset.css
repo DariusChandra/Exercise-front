@@ -15,11 +15,15 @@ a {
     color: #666;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #c00;
+    cursor: pointer;
 }
 img, fieldset {
     border: none;
+}
+input:focus {
+    outline: none;
 }
 table {
     border-collapse: collapse;
