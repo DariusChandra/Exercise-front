@@ -1,0 +1,13 @@
+body {
+    height: 2000px;
+}
+
+#div1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    background: #f00;
+}
+
+

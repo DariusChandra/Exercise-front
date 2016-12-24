@@ -1,0 +1,57 @@
+/********公用***********/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f6f9fc;
+}
+img {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul,li {
+    list-style: none;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+.clear { zoom:1; }
+.clear:after { content: '\20'; display: block; clear: both; }
+/****************内容部分*********************/
+#score {
+    margin: 10px auto;
+    width: 200px;
+}
+
+#score ul {
+    width: 135px;
+    height: 27px;
+    /*margin: 10px auto;*/
+}
+
+#score li {
+    width: 27px;
+    height: 27px;
+    float: left;
+    display: bolck;
+    /*margin-right: 2px;*/
+    cursor: pointer;
+    background: url(img/star.gif) no-repeat 0 0;
+}
+#score p {
+    width: 134px;
+    height: 28px;
+    background: #fff;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px #ccc solid;
+    display: none;
+}

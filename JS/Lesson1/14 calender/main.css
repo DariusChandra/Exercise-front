@@ -1,0 +1,72 @@
+/********公用***********/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f6f9fc;
+    font-family: arial;
+}
+img {
+    border: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+/****************内容部分*********************/
+#tab {
+    margin: 50px auto;
+    width: 210px;
+    padding: 10px 10px 20px 20px;
+    border: 1px solid #fcf;
+    background: #eae9e9;
+}
+#tab ul {
+    overflow: hidden;
+    padding-bottom: 10px;
+    width: 210px;
+}
+#tab li {
+    width: 58px;
+    height: 54px;
+    background: #424242;
+    border: 1px solid #fff;
+    color: #fff;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+}
+#tab li h2 {
+    font-size: 20px;
+    padding-top: 5px;
+}
+#tab li p {
+    font-size: 14px;
+}
+.text {
+    color: #555;
+    width: 178px;
+    background: #f1f1f1;
+    border: 1px solid #fff;
+    height: 100px;
+    padding: 10px 10px 10px;
+}
+.text h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.text p {
+    font-size: 12px;
+    line-height: 18px;
+}
+#tab .active {
+    border: 1px solid #424242;
+    background: #fff;
+    color: #e84aa6;
+}
+#tab .active p {
+    font-weight: bold;
+}

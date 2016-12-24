@@ -1,0 +1,41 @@
+/********公用***********/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f6f9fc;
+}
+img {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul,li {
+    list-style: none;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+.clear { zoom:1; }
+.clear:after { content: '\20'; display: block; clear: both; }
+/****************内容部分*********************/
+input {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+}
+.active {
+    background: #0fc;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background: #ccf;
+    display: none;
+}

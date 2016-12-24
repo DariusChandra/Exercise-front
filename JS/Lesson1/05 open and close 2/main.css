@@ -1,0 +1,72 @@
+/********公用***********/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f6f9fc;
+}
+img {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul,li {
+    list-style: none;
+}
+.clear { zoom:1; }
+.clear:after { content: '\20'; display: block; clear: both; }
+/****************内容部分*********************/
+.downList {
+    width: 200px;
+    overflow: hidden;
+    margin: 50px auto 0px;
+    border: 1px solid #aab4bc;
+    background: url(img/down_list_h2_bg.gif) repeat-x;
+}
+.downList h2 {
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #dee3e6;
+    border-top: 1px solid #f3f5f7;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #57646e;
+    cursor: pointer;
+}
+.downList h2 i {
+    display: inline-block;
+    line-height: 6px;
+    width: 11px;
+    
+}
+.up {
+    background: url(img/up.gif) no-repeat 180px center;
+}
+.down {
+    background: url(img/down.gif) no-repeat 180px center;
+}
+.downList ul {
+    width: 200px;
+    background: #e9edf2;
+    overflow: hidden;
+    font-size: 12px;
+}
+.downList li {
+    width: 200px;
+    float: left;
+}
+.downList a {
+    color: #6b7980;
+    padding-left: 10px;
+    line-height: 25px;
+    display: block;
+}
+.downList a:hover {
+    background: #fff;
+}

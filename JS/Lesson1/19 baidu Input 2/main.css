@@ -1,0 +1,55 @@
+/********公用***********/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f6f9fc;
+}
+img {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p,ul,li {
+    list-style: none;
+}
+.clear { zoom:1; }
+.clear:after { content: '\20'; display: block; clear: both; }
+/****************内容部分*********************/
+#box {
+    color: #0000cc;
+    font-size: 12px;
+    width: 58px;
+    margin: 0 auto;
+}
+#btn {
+    background: url(img/ico.gif) no-repeat 45px 4px;
+    line-height: 24px;
+    height: 24px;
+    padding-left: 3px;
+    cursor: pointer;
+}
+#ul1 {
+    border: 1px solid #9a99ff;
+    /*display: none;*/
+}
+#ul1 li {
+    height: 24px;
+    line-height: 24px;
+}
+#ul1 a {
+    color: #00c;
+    text-align: center;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    text-decoration: none;
+}
+#ul1 a:hover {
+    background: #d9e1f6;
+}

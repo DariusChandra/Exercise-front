@@ -1,0 +1,70 @@
+/********公用***********/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f6f9fc;
+    font-family: arial;
+}
+img {
+    border: none;
+}
+
+ul,li {
+    list-style: none;
+}
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    /*border: 1px solid #fcc*/;
+}
+/****************内容部分*********************/
+#box {
+    width: 415px;
+    height: 600px;
+    margin: 50px auto;
+    /*position: absolute;*/
+    background: #cbc;
+    border: 1px solid #ccf;
+}
+img {
+    border: 1px solid #000;
+}
+.small {
+    position: absolute;
+}
+.small img {
+    position: relative;
+}
+.active {
+    border: 1px solid #ff0;
+}
+#sm1 {
+    top: 9px;
+    right: 0px;
+}
+#sm2 {
+    top: 9px;
+    right: -4px;
+}
+#sm3 {
+    top: 9px;
+    right: -8px;
+}
+#sm4 {
+    top: 9px;
+    right: -12px;
+}
+#sm5 {
+    top: -407px;
+    right: -312px;
+}
+#sm6 {
+    top: -303px;
+    right: -212px;
+}
+#sm7 {
+    top: -199px;
+    right: -112px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改变Div的样式</title>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #f00;
+        }
+    </style>
+    <script>
+    function toGreen() {
+        var sameThing = document.getElementById('div1');
+        sameThing.style. width='200px';
+        sameThing.style. height='200px';
+        sameThing.style. background='green';
+    }
+    function toRed() {
+        var sameThing = document.getElementById('div1');
+        sameThing.style. width='100px';
+        sameThing.style. height='100px';
+        sameThing.style. background='#f00';
+    }
+    </script>
+</head>
+<body>
+    <div id="div1" onmouseover="toGreen()" onmouseout="toRed()">
+
+    </div>
+</body>
+</html>

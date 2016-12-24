@@ -1,0 +1,8 @@
+#div1 {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}

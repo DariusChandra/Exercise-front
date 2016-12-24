@@ -1,0 +1,56 @@
+/********公用***********/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f6f9fc;
+    font-family: arial;
+}
+img {
+    border: none;
+}
+
+ul,li {
+    list-style: none;
+}
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    /*border: 1px solid #fcc*/;
+}
+/****************内容部分*********************/
+.page {
+    width:800px;
+    height:600px;
+    background:url(img/bg.png) no-repeat;
+    margin:0 auto;
+    position:relative;
+}
+.left {
+    width:306px;
+    height:391px;
+    background:url(img/qq.png) no-repeat;
+    position:absolute;
+    right:15px;
+    top:20px;
+}
+#head {
+    width:52px;
+    height:52px;
+    background:url(img/link.png) 0 -52px no-repeat;
+    float:left;
+    margin:37px 0 0 12px;
+}
+a#head:hover {
+    background-position: 0 0;
+}
+#right {
+    width:299px;
+    height:207px;
+    background:url(img/prompt.png) no-repeat;
+    position:absolute;
+    top:30px;
+    left:-282px;
+    display:none;
+}
