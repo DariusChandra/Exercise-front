@@ -1,0 +1,6 @@
+#img1 {
+    filter: alpha(opacity:30);
+    width: 530px;
+    height: 900px;
+    opacity: 0.3;
+}

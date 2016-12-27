@@ -1,0 +1,9 @@
+div {
+    width: 100px;
+    height: 100px;
+    /*position: absolute;*/
+    background: #f00;
+    /*right: 0;*/
+    margin-top: 10px;
+    filter: alpha(opacity: 30);
+}

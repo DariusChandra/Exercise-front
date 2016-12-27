@@ -1,0 +1,20 @@
+#div1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #f00;
+    left: 0px;
+    top: 50px;
+}
+#line {
+    width: 1px;
+    height: 300px;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    background: #00f;
+}
+#txt1 {
+    position: absolute;
+    top: 200px;
+}
