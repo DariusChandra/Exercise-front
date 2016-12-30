@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 12px/1.25 "tahoma,arial,宋体,sans-serif";
+}
+#ul1 li {
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    float: left;
+    list-style: none;
+    background: #9f3;
+    border: 1px solid #660;
+}
+#ul1 li div {
+    background: #ccc;
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    filter: alpha(opacity:0);
+    opacity: 0;
+}
