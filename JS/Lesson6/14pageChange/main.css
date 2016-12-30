@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#ul1 {
+    width: 366px;
+    margin: 100px auto;
+    position: relative;
+}
+
+#ul1 li {
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    border: 1px solid #000;
+    float: left;
+    margin: 10px;
+}
+#div1 {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+#div2 {
+    width: 200px;
+    height: 200px;
+    background: #ff0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
