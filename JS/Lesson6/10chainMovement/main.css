@@ -1,0 +1,23 @@
+body {
+    background: #666;
+    display: bolck;
+    margin: 8px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    border: 0;
+}
+#div1 {
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    filter: alpha(opacity: 30);
+    opacity: 0.3;
+}
+
