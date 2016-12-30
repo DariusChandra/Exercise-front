@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#div1 {
+    position: relative;
+    border: 1px solid #000;
+    width: 680px;
+    height: 132px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+#div1 ul {
+    position: absolute;
+    left: 0;
+    width: 2000px;
+}
+#div1 ul li {
+    list-style: none;
+    float: left;
+    width: 150px;
+    height: 112px;
+    padding: 10px;
+}
+#div1 ul li img {
+    width: 150px;
+    height: 112px;
+}
+.click {
+    text-decoration: none;
+    font-size: 80px;
+    float: left;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    top: 70px;
+}
