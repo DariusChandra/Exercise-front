@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#div1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #f00;
+    cursor: pointer;
+}
+div {
+    width: 2px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+}
