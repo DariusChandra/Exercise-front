@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <script src="http://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+    </div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds to see my dynamically bound title!
+        </span>
+    </div>
+
+    <div id="app3">
+        <p v-if="seen">Now you see me</p>
+    </div>
+
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
+
+    <div id="app-5">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">
+            Reverse Message
+        </button>
+    </div>
+
+    <div id="app-6">
+        <p>{{message}}</p>
+        <input type="text" v-model="message">
+    </div>
+
+    <div id="app-7">
+        <ol>
+            <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+        </ol>
+    </div>
+
+    <span id="app-9" v-once>This message will never change: {{ msg }}</span>
+
+    <div v-bind:id="dynamicId"></div>
+
+
+<!-- -分割线- -->
+    <script>
+    var app9 = new Vue({
+        el: '#app-9',
+        data: {
+            msg: 'hahahhaha'
+        }
+    });
+
+    // 实力生命周期
+        // var vm = new Vue({
+        //     data: {
+        //         a: 1
+        //     },
+        //     created: function() {
+        //         console.log('a is: ' + this.a )
+        //     }
+        // });
+
+    // 属性与方法
+        // var data = { a: 1 };
+        // var vm = new Vue({
+        //     data: data
+        // });
+        // vm.a === data.a;
+
+        // vm.a = 2;
+        // data.a
+
+    // 构造器
+        // var vm = new Vue({
+        //     // 选项
+        // });
+        // var MyComponent = Vue.extend({
+        //     // 扩展选项
+        // });
+        //     // 所有的 `MyComponent` 实例都将以预定义的扩展选项被创建
+        // var myComponentInstance = new MyComponent();
+
+        Vue.component('todo-item', {
+            props: ['todo'],
+            template: '<li>{{ todo.text }}</li>'
+        });
+
+
+    var app7 = new Vue({
+        el: '#app-7',
+        data: {
+            groceryList: [
+                { text: 'Vegetables' },
+                { text: 'Cheese' },
+                { text: 'Whatever else humans are supposed to eat ' }
+            ]
+        }
+    });
+
+    var app6 = new Vue({
+        el: '#app-6',
+        data: {
+            message: 'Hello Vue!'
+        }
+    });
+
+    var app5 = new Vue({
+        el: '#app-5',
+        data: {
+            message: 'Hello Vue.js'
+        },
+        methods: {
+            reverseMessage: function() {
+                this.message = this.message.split(' ').reverse().join(' ')
+            }
+        }
+    });
+    var app4 = new Vue({
+        el: '#app-4',
+        data: {
+            todos: [
+                { text: 'Learn JavaScript' },
+                { text: 'Learn Vue' },
+                { text: 'Build something awesome' }
+            ]
+        }
+    });
+    app4.todos.push({ text: 'New item' });
+
+    var app3 = new Vue({
+        el: '#app3',
+        data: {
+            seen: true
+        }
+    });
+
+    var app2 = new Vue({
+        el: '#app-2',
+        data: {
+            message: 'some new message'
+        }
+    });
+
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'hello Vue!'
+        }
+    });
+
+    </script>
+</body>
+</html>
