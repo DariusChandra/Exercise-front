@@ -53,9 +53,21 @@ window.onload = function() {
 
                 var oNear = findNearest(obj);
                 if (oNear) {
+                    // oNear -> obj
+                    oNear.className = '';
 
+                    oNear.style.zIndex = iMinZindex++;
+                    obj.style.zIndex = iMinZindex++;
+
+                    startMove(oNear, aPos[obj.index]);
+                    startMove(obj, aPos[oNear.index]);
+                    
+                    var tmp = 0;
+                    tmp = obj.index;
+                    obj.index = oNear.index;
+                    oNear.index = tmp;
                 } else {
-                    startMove(obj, {left: aPos[obj.index].left, top: aPos[obj.index].top });
+                    startMove(obj, aPos[obj.index]);
                 }
             };
 
@@ -114,8 +126,6 @@ window.onload = function() {
     }
 
     // 运动框架
-
-    
 
 
 
