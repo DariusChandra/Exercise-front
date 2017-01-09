@@ -1,0 +1,20 @@
+{
+  "name": "lesson3",
+  "version": "1.0.0",
+  "description": "learn how to use superagent and cheerio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "superagent",
+    "cheerir"
+  ],
+  "author": "Salarewor",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "superagent": "^3.3.1"
+  }
+}
