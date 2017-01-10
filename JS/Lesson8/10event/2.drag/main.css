@@ -1,0 +1,21 @@
+#div1 {
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    position: absolute;
+    cursor: pointer;
+}
+#div2 {
+    width: 100px;
+    height: 100px;
+    background: #ff0;
+    position: absolute;
+    cursor: pointer;
+}
+#div3 {
+    width: 100px;
+    height: 100px;
+    background: #0f0;
+    position: absolute;
+    cursor: pointer;
+}
