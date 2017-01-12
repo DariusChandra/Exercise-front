@@ -1,0 +1,21 @@
+#div1 {
+    width: 11px;
+    height: 11px;
+    background: url(img/drag_ico.gif);
+    position: absolute;
+    cursor: nw-resize;
+    bottom: 0;
+    right: 0;
+}
+#div2 {
+    width: 200px;
+    height: 150px;
+    background: #ccc;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.box {
+    position: absolute;
+    border: 1px dotted #00d;
+}
