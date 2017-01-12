@@ -1,0 +1,25 @@
+#div1 {
+    width: 200px;
+    height: 200px;
+    background: #f00;
+/*    position: absolute;
+    cursor: pointer;*/
+}
+#parent {
+    width: 400px;
+    height: 20px;
+    background: #ccc;
+    position: relative;
+    margin: 20px auto;
+    z-index: 1;
+}
+#div2 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+#div3 {
+    position: absolute;
+}
